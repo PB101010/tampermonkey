@@ -1,6 +1,9 @@
 function parse_item_id(raw_url){
+	let idParsed = /(?<=item\/)\d+/.exec(raw_url);
+	console.log("raw_url:" + raw_url);
+	console.log("id_parsed:" + raw_url);
     // 解析产品id
-    return /(?<=item\/)\d+/.exec(raw_url);
+    return idParsed;
 }
 
 function product_detail(){
