@@ -8,7 +8,6 @@ function parse_item_id(raw_url){
 
 function product_detail(){
     let pro_id = parse_item_id(document.activeElement.href);
-    console.log(pro_id);
     if (pro_id == null){return}
     let link_ = "https://www.aliexpress.com/item/" + pro_id + ".html";
     GM_openInTab(link_);
@@ -17,7 +16,6 @@ function product_detail(){
 
 function product_edit(){
     let pro_id = parse_item_id(document.activeElement.href);
-    console.log(pro_id);
     if (pro_id == null){return}
     let link_ = "https://gsp.aliexpress.com/apps/product/publish?productId=" + pro_id;
     GM_openInTab(link_);
