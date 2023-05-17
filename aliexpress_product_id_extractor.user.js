@@ -5,8 +5,8 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  在浏览器中右键点击链接，提取产品ID，并在新标签页打开
-// @author       Your Name
-// @include      *://*/*
+// @author       ebal.huangjun@gmail.com
+// @include      https://csp.aliexpress.com/apps/csp/*
 // @grant        GM_openInTab
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // ==/UserScript==
