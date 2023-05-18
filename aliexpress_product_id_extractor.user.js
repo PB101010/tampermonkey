@@ -3,7 +3,7 @@
 // @downloadURL    https://github.com/PB101010/tampermonkey/raw/main/aliexpress_product_id_extractor.user.js
 // @name         提取Aliexpress产品ID
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  在浏览器中右键点击链接，提取产品ID，并在新标签页打开
 // @author       ebal.huangjun@gmail.com
 // @include      https://csp.aliexpress.com/apps/csp/*
@@ -15,7 +15,7 @@
     'use strict';
 
     function extractProductId(url) {
-        const regex = /https:\/\/[\w-]+\.aliexpress\..+\/item\/(\d+)(\.html)?/;
+        const regex = /https:\/\/[\w-]*\.?aliexpress\..+\/item\/(\d+)(\.html)?/;
         const match = url.match(regex);
         if (match && match[1]) {
             return match[1];
