@@ -15,7 +15,7 @@
     'use strict';
 
     function extractProductId(url) {
-        const regex = /https:\/\/aliexpress\..+\/item\/(\d+)\.html/;
+        const regex = /https:\/\/[\w-]+\.aliexpress\..+\/item\/(\d+)(\.html)?/;
         const match = url.match(regex);
         if (match && match[1]) {
             return match[1];
