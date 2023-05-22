@@ -1,6 +1,6 @@
 // ==UserScript==
-// @updateURL      https://raw.githubusercontent.com/PB101010/tampermonkey/main/aliexpress.user.js
-// @downloadURL    https://raw.githubusercontent.com/PB101010/tampermonkey/main/aliexpress.user.js
+// @updateURL      https://raw.githubusercontent.com/PB101010/tampermonkey/main/aliexpress.js
+// @downloadURL    https://raw.githubusercontent.com/PB101010/tampermonkey/main/aliexpress.js
 // @name         提取Aliexpress产品ID
 // @namespace    http://tampermonkey.net/
 // @version      0.2
